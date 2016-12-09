@@ -111,7 +111,7 @@ def ep2():
             },
             {
                 'text': '{} orders for {}!'.format(number, date),
-                'icon': 'i1173',
+                'icon': 'i3235',
                 'index': 2
             },
             {

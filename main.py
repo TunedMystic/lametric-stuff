@@ -98,8 +98,8 @@ def ep2():
     response_data = {
         'frames': [
             {
-                'text': 'LeafLink',
-                'icon': 'i34',
+                'text': '     LeafLink     LeafLink     LeafLink',
+                'icon': 'i5039',
                 'index': 0
             },
             {

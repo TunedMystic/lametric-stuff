@@ -75,7 +75,9 @@ def ep1():
 @app.route('/c6d9e5a8724984c0e3233c95f18c0642e375d142', methods=['GET'])
 def ep2():
     date = format_date(get_month_start())
-    amount = random_money()
+    dollar = random_money()
+    number = random.randint(1, 600)
+    retailers = random.randint(400, 800)
 
     quotes = [
         {
@@ -93,7 +95,7 @@ def ep2():
     ]
 
     random_quote = random.choice(quotes)
-    random_quote['index'] = 2
+    random_quote['index'] = 4
 
     response_data = {
         'frames': [
@@ -103,9 +105,19 @@ def ep2():
                 'index': 0
             },
             {
-                'text': '{} in orders for {}!'.format(amount, date),
+                'text': '{} in orders for {}!'.format(dollar, date),
                 'icon': 'i34',
                 'index': 1
+            },
+            {
+                'text': '{} orders for {}!'.format(number, date),
+                'icon': 'i1173',
+                'index': 2
+            },
+            {
+                'text': '{} Retailers on LeafLink!'.format(retailers),
+                'icon': None,
+                'index': 3
             },
             random_quote
         ]

@@ -100,7 +100,7 @@ def ep2():
     response_data = {
         'frames': [
             {
-                'text': 'LeafLink..... LeafLink..... LeafLink.....',
+                'text': 'LeafLink......... LeafLink......... LeafLink.........',
                 'icon': 'i5039',
                 'index': 0
             },

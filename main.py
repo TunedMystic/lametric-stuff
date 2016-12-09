@@ -98,6 +98,11 @@ def ep2():
     response_data = {
         'frames': [
             {
+                'text': 'LeafLink',
+                'icon': 'i34',
+                'index': 0
+            },
+            {
                 'text': '{} in orders for {}!'.format(amount, date),
                 'icon': 'i34',
                 'index': 0

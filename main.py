@@ -92,13 +92,17 @@ def ep2():
         }
     ]
 
+    random_quote = random.choice(quotes)
+    random_quote['index'] = 1
+
     response_data = {
         'frames': [
             {
-                'text': '${} in orders for {}!'.format(amount, date),
-                'icon': 'a2867'
+                'text': '{} in orders for {}!'.format(amount, date),
+                'icon': 'i34',
+                'index': 0
             },
-            random.choice(quotes)
+            random_quote
         ]
     }
 

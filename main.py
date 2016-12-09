@@ -94,13 +94,16 @@ def ep2():
         }
     ]
 
-    random_quote = random.choice(quotes)
-    random_quote['index'] = 4
+    random_quote_1 = random.choice(quotes)
+    random_quote_1['index'] = 3
+
+    random_quote_2 = random.choice(quotes)
+    random_quote_2['index'] = 5
 
     response_data = {
         'frames': [
             {
-                'text': 'LeafLink......... LeafLink......... LeafLink.........',
+                'text': '.............'.join(['Leaflink' for i in range(3)]),
                 'icon': 'i5039',
                 'index': 0
             },
@@ -114,12 +117,13 @@ def ep2():
                 'icon': 'i3235',
                 'index': 2
             },
+            random_quote_1,
             {
                 'text': '{} Retailers on LeafLink!'.format(retailers),
                 'icon': 'i5039',
-                'index': 3
+                'index': 4
             },
-            random_quote
+            random_quote_2,
         ]
     }
 

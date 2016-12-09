@@ -116,7 +116,7 @@ def ep2():
             },
             {
                 'text': '{} Retailers on LeafLink!'.format(retailers),
-                'icon': None,
+                'icon': 'i5039',
                 'index': 3
             },
             random_quote

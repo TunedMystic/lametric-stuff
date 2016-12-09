@@ -93,7 +93,7 @@ def ep2():
     ]
 
     random_quote = random.choice(quotes)
-    random_quote['index'] = 1
+    random_quote['index'] = 2
 
     response_data = {
         'frames': [
@@ -105,7 +105,7 @@ def ep2():
             {
                 'text': '{} in orders for {}!'.format(amount, date),
                 'icon': 'i34',
-                'index': 0
+                'index': 1
             },
             random_quote
         ]
@@ -119,4 +119,4 @@ def ep2():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=80)
+    app.run(debug=True, port=7000)

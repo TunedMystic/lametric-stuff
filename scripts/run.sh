@@ -10,4 +10,4 @@ cd "$ROOT_PATH"
 mkdir -p "$ROOT_PATH/log"
 
 echo 'Starting gunicorn...'
-gunicorn main --bind 0.0.0.0:80 --access-logfile log/access.log --error-logfile log/error.log
+gunicorn main --bind 0.0.0.0:7000 --access-logfile log/access.log --error-logfile log/error.log
